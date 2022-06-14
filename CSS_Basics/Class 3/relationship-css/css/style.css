@@ -1,0 +1,17 @@
+/* h2 is a direct child of section */
+section > h2 { 
+    color: purple;
+    font-size: 40px;
+}
+
+/* h2 is a non-direct child of section */
+article h2 {
+    color: red;
+}
+
+/* i.e. give me an h2 thats within an article and within a section */
+section > article > h2 {
+    color: gold;    
+}
+
+

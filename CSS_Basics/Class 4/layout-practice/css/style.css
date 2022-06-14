@@ -1,0 +1,21 @@
+ 
+/* '*' means apply to everything */
+*{
+    box-sizing: border-box;
+}
+header, footer{
+    height: 300px;
+    border: 3px solid black;
+    clear: both;  /* Dont slide under anything when something has floated */
+}
+
+section{
+    width: 33.3%;
+    height: 400px;
+    float: left;
+    border: 3px solid black;
+}
+
+footer{
+
+}
