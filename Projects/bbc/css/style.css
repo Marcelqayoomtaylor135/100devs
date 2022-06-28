@@ -1,0 +1,194 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+body{
+    font-family: "Helvetica", sans-serif;
+    margin: 0 auto;
+}
+
+header{
+    height: 80px;
+    background: black;
+    color: white;
+    
+}
+
+nav{
+    height: 80px;
+    
+}
+
+nav ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;   
+    padding: 0 20px 0 20px;
+}
+
+nav li{
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    border-left: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: white;   
+    font-size: 18px;
+}
+
+.thiccNavItem{
+    padding-left: 30px;
+    text-align: left;
+    flex: 1.8;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.startNavItem{
+    padding-left: 0;
+    border: none;
+    flex: 1.2;
+
+}
+
+.startNavItem img{
+    width: 90%;
+    height: 80%;
+}
+
+#main{
+    padding: 0 20px 0 20px;
+}
+
+h1{
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    color: black;
+    font-size: 26px;
+}
+
+h4{
+    color: gray;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h5{
+    color: rgb(131, 131, 131);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section{
+    /* border: 2px solid black;  */
+}
+
+#titleBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#firstArticleBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainArticle, .fourArticleContainer{
+    width: 49%;
+    height: 450px;
+}
+
+#mainArticle img{
+    width: 100%;
+    height: 100%;
+}
+
+.fourArticleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.squareArticle{
+    width: 49%;
+    height: 48%;
+}
+
+.squareArticle img{
+    width: 100%;
+    height: 100%;
+}
+
+#newsArticleBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#newsArticleBar section{
+    height: 430px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#newsArticleBar section img{
+    width: 100%;
+    height: 70%;
+}
+
+#newsArticleBar section h3{
+    margin-top: 0;
+}
+
+#newsArticleBar section h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Issues:
+
+1. Navigation UL isnt going all the way to the edge
+
+
+
+*/

@@ -1,0 +1,331 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+p, a, span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+span{
+  color: rgb(255,137,5);
+  font-weight: 700;
+}
+
+button{
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(255,137,5);
+  height: 60px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+#logo{
+  font-family: 'Parisienne', cursive;
+  font-size: 50px;
+  color: black;
+  font-weight: 400;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  
+}
+
+body > section{
+  padding: 0 8% 0 8%
+}
+
+
+#main {
+  height: 850px;
+  background-image: url('../images/main.png');
+  background-size: cover;
+}
+
+
+nav{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li{
+  
+}
+
+#main section{
+  padding-top: 8%;
+  width: 50%;
+}
+
+#main form{
+  display:flex;
+  box-shadow: 5px 30px #ffffff15;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#main .textInput{
+  padding: 2% 0 2% 3%;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: none;
+  flex: 4;
+}
+
+#main .textInput + input{
+  border: none;
+  flex: 1;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(255, 153, 0);
+}
+
+#main section ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 35%;
+}
+
+
+#main section ul li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#main section ul li i{
+  padding-right: 7px;
+  color:rgb(255, 153, 0);
+}
+
+#discover{
+  height: 800px;
+  background-image: url('../images/porridge.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#discover > section{
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20%;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+#discover > section > p{
+  line-height: 30px;
+}
+
+#specialty{
+  height: 800px;
+  background: rgb(242,246,247);
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+}
+
+
+#specialty ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 10px 20px;
+  width: 40%;
+  border-bottom: 2px solid grey;
+}
+
+#specialty > section{
+  width: 90%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#specialty > section > img{
+  width: 300px;
+}
+
+#specialty > img{
+  width: 110px;
+}
+
+#opening{
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+}
+
+#opening p{
+  font-weight: 700;
+}
+
+
+#opening p + p{
+  margin-top: 0;
+  font-size: 26px;
+  font-family: 'Playfair Display', serif;
+}
+
+#opening img{
+  width: 70%;
+  padding-top: 4%;
+}
+
+#callNow{
+  padding-top: 30px;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#callNow span{
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+#callNow + section{
+  padding-top: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#testimonials{
+  background: rgb(242,246,247);
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+}
+
+#testimonials > section{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#testimonials > section p{ 
+  line-height: 30px;
+}
+
+#testimonials > img{
+  padding: 20px 0 40px 0;
+  width: 110px;
+}
+
+
+#testimonials > section img{
+  padding: 40px 0 20px 0;
+  width: 8%;
+}
+
+#testimonials > section .testName{
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#testimonials > section .testName + span{
+  color: grey;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#testimonials > section ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  padding: 10px 0;
+}
+
+#testimonials > section ul li{
+  color: rgb(255,193,7);
+}
+
+
+
+
+
+
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

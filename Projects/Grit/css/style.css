@@ -1,0 +1,173 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Helvitica', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+p{
+  font-weight: bold;
+}
+header{
+  background: rgb(89,106,122);
+  height: 60px;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+nav ul li{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-right: 60px; /* recentres logo, might not be good practice */
+}
+
+.firstNavItem{
+  padding: 0;
+}
+
+#mainSlideShow {
+  background: rgb(89,106,122);
+  text-align: center;
+  height: 400px;
+  padding: 80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin: 0;
+}
+
+#whySection, #volunteerSection{
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#whySection > section{
+  width: 50%;
+}
+
+#showcaseSection{
+  background: rgb(204,211,212);
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#showcaseSection section{
+  /* border:1px solid black; */
+  width: 35%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#showcaseSection section .imagePlaceholder{
+  width: 82%;
+  height: 45%;
+  background: rgb(89,106,122);
+}
+
+#volunteerSection{
+  height: 400px;
+}
+
+#volunteerSection > section{
+  width: 50%;
+}
+
+footer{
+  background: black;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+footer > section{
+  margin: 0 40px 0 40px;
+  color: white;
+}
+
+.footerMain{ 
+  flex: 2;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.footerMain + section { 
+  flex: 1;
+}
+
+.footerMain section{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-between;
+  /* border: 1px solid white; */
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
